@@ -125,7 +125,7 @@
         }
         .vision-box p { color: var(--text-secondary); font-size: 1.05rem; }
 
-        /* --- GRILLE DES PILIERS --- */
+        /* --- GRILLE DES PILIERS / PRODUITS --- */
         .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
 
         .card {
@@ -146,7 +146,72 @@
         .card h3 { font-family: 'Orbitron'; font-size: 0.85rem; margin-bottom: 15px; color: var(--text-main); letter-spacing: 1px; }
         .card p { font-size: 0.95rem; color: var(--text-secondary); }
 
-        /* --- BADGES ÉQUIPE (STYLE ÉPURÉ) --- */
+        /* --- SECTION BENEVOLAT & BOUTONS --- */
+        .recrutement-box {
+            background: linear-gradient(135deg, rgba(255,255,255,0.9), rgba(240,240,250,0.8));
+            border: 2px dashed rgba(180, 0, 255, 0.3);
+            padding: 50px;
+            border-radius: 35px;
+            text-align: center;
+            margin-top: 60px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.02);
+        }
+        .recrutement-box h3 {
+            font-family: 'Orbitron';
+            font-size: 1.6rem;
+            color: var(--text-main);
+            margin-bottom: 15px;
+            letter-spacing: 1px;
+        }
+        .recrutement-box p {
+            color: var(--text-secondary);
+            font-size: 1.1rem;
+            max-width: 700px;
+            margin: 0 auto 30px auto;
+        }
+        .cta-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .btn-lumy {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 0.9rem;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            text-decoration: none;
+            padding: 16px 35px;
+            border-radius: 15px;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .btn-postuler {
+            background: var(--text-main);
+            color: #ffffff;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        .btn-postuler:hover {
+            background: var(--lumy-purple);
+            transform: translateY(-3px);
+            box-shadow: 0 15px 25px rgba(180, 0, 255, 0.2);
+        }
+        .btn-inscrire {
+            background: transparent;
+            color: var(--text-main);
+            border: 2px solid var(--text-main);
+        }
+        .btn-inscrire:hover {
+            background: var(--text-main);
+            color: #ffffff;
+            transform: translateY(-3px);
+            box-shadow: 0 15px 25px rgba(0,0,0,0.1);
+        }
+
+        /* --- BADGES ÉQUIPE --- */
         .team-badge {
             display: flex; align-items: center; gap: 25px;
             background: var(--glass-bg); 
@@ -167,6 +232,8 @@
             h1 { font-size: 1.8rem; letter-spacing: 3px; }
             .hero-mission { padding: 50px 20px; border-radius: 30px; }
             .vision-box { padding: 35px 25px; }
+            .cta-container { flex-direction: column; gap: 15px; }
+            .btn-lumy { width: 100%; justify-content: center; }
         }
     </style>
 </head>
@@ -182,31 +249,55 @@
 
     <h2>Architecture & Vision</h2>
     <div class="vision-box">
-        <h3>L'Écosystème LumyOS</h3>
+        <h3>L'Écosystème Souverain Lumy Corp</h3>
         <p>
-            <strong>AuraOS</strong> n'est pas une simple alternative. C'est un manifeste technologique. 
-            Développé sur une base <strong>Noyau Pur</strong>, notre système est conçu pour l'élite : une latence zéro, une empreinte RAM minimale et une interface fluide aux couleurs Lumy.
+            Oubliez tout ce que vous connaissez. <strong>LumyOS</strong>, ce n'est pas une simple alternative gentillette : c'est un manifeste technologique et éco-responsable 100 % français qui vient secouer le game. Conçu pour envoyer une latence zéro, afficher une empreinte matérielle minuscule et garantir une sécurité maximale, notre OS redéfinit complètement les règles de l'informatique.
             <br><br>
-            La <strong>Lumy Corporation</strong> agit comme une "maison-mère" pour les talents de demain. À travers notre label, nous formons une communauté d'experts capables de transformer des idées en startups indépendantes.
+            Au cœur de cette révolution, la <strong>Lumy Corporation</strong> joue le rôle de bouclier de souveraineté ultime et de "maison-mère" pour faire décoller les innovations de demain. Avec nos outils comme <strong>Lumy Wplace</strong>, on est en train de bâtir une infrastructure totalement indépendante pour couper l'herbe sous le pied des géants américains. Finie la dépendance, place à la liberté !
         </p>
     </div>
 
-    <h2>Les Piliers de la Corporation</h2>
+    <h2>Nos Technologies Nationales</h2>
     <div class="grid">
         <div class="card">
-            <i class="fas fa-microchip"></i>
-            <h3>Performance Pure</h3>
-            <p>Optimisation atomique du Kernel pour garantir que chaque cycle de votre processeur soit dédié à votre productivité, pas aux processus d'arrière-plan inutiles.</p>
+            <i class="fas fa-laptop"></i>
+            <h3>LumyOS (PC & Mac)</h3>
+            <p>Notre système d'exploitation optimisé au cœur, redonnant vie aux ordinateurs et bloquant par défaut toutes les fuites de données et spywares extérieurs.</p>
+        </div>
+        <div class="card">
+            <i class="fas fa-mobile-alt"></i>
+            <h3>LumyOS Phone & Tablette</h3>
+            <p>La déclinaison mobile de notre écosystème. Une interface fluide aux couleurs de Lumy, centrée sur le respect de la vie privée et l'autonomie de votre batterie.</p>
+        </div>
+        <div class="card">
+            <i class="fas fa-briefcase"></i>
+            <h3>Lumy Wplace</h3>
+            <p>La suite bureautique et collaborative pro souveraine et française. Mail, Drive et traitement de texte sécurisés, propulsés par une infrastructure locale ultra-rapide.</p>
+        </div>
+        <div class="card">
+            <i class="fas fa-compass"></i>
+            <h3>Navigateur Lumy</h3>
+            <p>Un navigateur web ultra-léger, sans aucun tracker publicitaire intégré, conçu pour naviguer sur le web à la vitesse de l'éclair en toute confidentialité.</p>
+        </div>
+        <div class="card">
+            <i class="fas fa-search"></i>
+            <h3>Moteur de Recherche Lumy</h3>
+            <p>Votre porte d'entrée souveraine sur le web. Des résultats neutres, pertinents, sans censure commerciale et sans aucun enregistrement de votre historique.</p>
         </div>
         <div class="card">
             <i class="fas fa-fingerprint"></i>
             <h3>Identité Souveraine</h3>
-            <p>Vos données sont votre propriété. Nous fournissons les outils de chiffrement et d'infrastructure pour garantir une confidentialité absolue, sans compromis.</p>
+            <p>Vos données restent chez vous. Nous fournissons des serveurs chiffrés et des structures locales par pays pour briser définitivement les monopoles étrangers.</p>
         </div>
-        <div class="card">
-            <i class="fas fa-graduation-cap"></i>
-            <h3>Élite Program</h3>
-            <p>Un incubateur technologique unique. Nous sélectionnons les meilleurs étudiants pour les aider à créer leurs propres entreprises sous le label d'excellence Lumy.</p>
+    </div>
+
+    <h2>Rejoindre l'Aventure</h2>
+    <div class="recrutement-box">
+        <h3>Nous recherchons des bénévoles</h3>
+        <p>Pour faire rayonner cet écosystème unique et accélérer le déploiement de LumyOS, la Corporation ouvre ses portes. Rejoignez notre communauté de passionnés, de développeurs et d'ambassadeurs pour bâtir le futur du numérique français.</p>
+        <div class="cta-container">
+            <a href="https://lumycorp.com/recrutement.html" class="btn-lumy btn-postuler"><i class="fas fa-paper-plane"></i> Postuler</a>
+            <a href="https://lumycorp.com/postulation.html" class="btn-lumy btn-inscrire"><i class="fas fa-user-plus"></i> S'inscrire</a>
         </div>
     </div>
 
