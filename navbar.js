@@ -111,22 +111,26 @@
                 <a href="index.html" class="nav-link-main">Accueil</a>
                 
                 <div class="nav-item">
-                    <div class="nav-link-main">Services <i class="fas fa-chevron-down"></i></div>
+                    <div class="nav-link-main">Formation et Services <i class="fas fa-chevron-down"></i></div>
                     <div class="dropdown-menu">
-                        <a href="missions.html">Missions</a>
                         <a href="avancement.html">Avancement</a>
+                        <a href="formaton.html.html">Formation</a>
                         <a href="actu.html">Actu</a>
                     </div>
                 </div>
 
-                <a href="qui sommes nous.html" class="nav-link-main">Qui sommes-nous</a>
+                  <div class="nav-item">
+                    <div class="nav-link-main">Qui sommes-nous <i class="fas fa-chevron-down"></i></div>
+                    <div class="dropdown-menu">
+                        <a href="qui sommes nous.html">Qui sommes-nous</a>
+                         <a href="missions.html">Missions</a>
+                    </div>
+                </div>
 
                 <div class="nav-item">
                     <div class="nav-link-main">Contact <i class="fas fa-chevron-down"></i></div>
                     <div class="dropdown-menu">
-                        <a href="contact.html">Nous contacter</a>
                         <a href="communaute.html">Communauté</a>
-                        <a href="don.html">Faire un don</a>
                     </div>
                 </div>
 
