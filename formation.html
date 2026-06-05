@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FORMATIONS - LUMY WORKPLACE</title>
+    <title>FORMATIONS - LUMY For Training</title>
     
     <!-- GOOGLE ANALYTICS (GTAG) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-RBK1P68BP9"></script>
@@ -38,42 +38,11 @@
             align-items: center;
         }
 
-        /* NAVBAR */
-        .navbar {
-            width: 100%;
-            padding: 30px 40px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background: transparent;
-            max-width: 1200px;
-        }
-        
-        /* LOGO LUMY AVEC LE DEGRADE SUR LUMY ET TEXTE FOR TRAINING */
-        .nav-logo {
-            font-size: 22px;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            background: linear-gradient(135deg, #11b199 0%, #297be6 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            display: inline-block;
-        }
-        .nav-logo span {
-            color: #5f6368;
-            -webkit-text-fill-color: #5f6368; /* Annule le dégradé pour le reste du texte */
-            font-weight: 400;
-            font-size: 16px;
-            margin-left: 5px;
-            text-transform: uppercase;
-        }
-
         /* HEADER DE LA PAGE */
         .page-header {
             text-align: center;
             max-width: 800px;
-            margin: 40px auto 40px auto;
+            margin: 60px auto 40px auto; /* Légèrement descendu pour laisser la place à ta navbar.js */
             padding: 0 20px;
         }
         .page-title {
@@ -216,10 +185,8 @@
 </head>
 <body>
 
-<!-- BARRE DE NAVIGATION -->
-<div class="navbar">
-    <div class="nav-logo">LUMY <span>FOR TRAINING</span></div>
-</div>
+<!-- LE SCRIPT NAVBAR S'OCCUPE D'INJECTER LE BANDEAU ICI AUTOMATIQUEMENT -->
+<script src="navbar.js"></script>
 
 <!-- EN-TÊTE -->
 <div class="page-header">
@@ -278,8 +245,7 @@
 
 </div>
 
-<!-- INTEGRATION DES SCRIPTS DU SITE (NAVBAR, FOOTER ET COOKIES) -->
-<script src="navbar.js"></script>
+<!-- AUTRES SCRIPTS DU SITE -->
 <script src="cookies.js"></script>
 <script src="footer.js"></script>
 
