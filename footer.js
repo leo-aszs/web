@@ -135,7 +135,7 @@
                         <a href="https://discord.gg/rafnuWBaYk" target="_blank"><i class="fab fa-discord"></i></a>
                         <a href="https://www.facebook.com/profile.php?id=61577497438561"><i class="fab fa-facebook-f"></i></a>
                         <a href="https://www.reddit.com/r/lumy_corporation/"><i class="fab fa-reddit-alien"></i></a>
-                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                        <a href="https://www.tiktok.com/@lumycorporation"><i class="fab fa-tiktok"></i></a>
                         <a href="https://www.instagram.com/lumy_corporation/"><i class="fab fa-instagram"></i></a>
                         <a href="https://www.youtube.com/channel/UCVrshDBH5LeavlB78M9WJQg"><i class="fab fa-youtube"></i></a>
                         <a href="https://www.linkedin.com/company/lumy-corporation/"><i class="fab fa-linkedin-in"></i></a>
