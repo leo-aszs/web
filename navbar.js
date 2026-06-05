@@ -114,7 +114,7 @@
                     <div class="nav-link-main">Formation et Services <i class="fas fa-chevron-down"></i></div>
                     <div class="dropdown-menu">
                         <a href="avancement.html">Avancement</a>
-                        <a href="formaton.html.html">Formation</a>
+                        <a href="formaton.html">Formation</a>
                         <a href="actu.html">Actu</a>
                     </div>
                 </div>
