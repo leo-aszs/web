@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMATIONS - LUMY WORKPLACE</title>
+    
+    <!-- GOOGLE ANALYTICS (GTAG) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-RBK1P68BP9"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('consent', 'default', { 'analytics_storage': 'denied' });
+      gtag('js', new Date());
+      gtag('config', 'G-RBK1P68BP9');
+    </script>
+
+    <!-- LIEN POUR CHARGER LES ICONES -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght=300;400;500;700&display=swap');
+        
+        * {
+            box-sizing: border-box;
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            background: radial-gradient(circle at 50% 30%, rgba(41, 123, 230, 0.12) 0%, rgba(17, 177, 153, 0.02) 45%, #ffffff 75%);
+            color: #202124;
+            -webkit-font-smoothing: antialiased;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* NAVBAR */
+        .navbar {
+            width: 100%;
+            padding: 30px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: transparent;
+            max-width: 1200px;
+        }
+        
+        /* LOGO LUMY AVEC LE DEGRADE SUR LUMY ET TEXTE FOR TRAINING */
+        .nav-logo {
+            font-size: 22px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            background: linear-gradient(135deg, #11b199 0%, #297be6 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            display: inline-block;
+        }
+        .nav-logo span {
+            color: #5f6368;
+            -webkit-text-fill-color: #5f6368; /* Annule le dégradé pour le reste du texte */
+            font-weight: 400;
+            font-size: 16px;
+            margin-left: 5px;
+            text-transform: uppercase;
+        }
+
+        /* HEADER DE LA PAGE */
+        .page-header {
+            text-align: center;
+            max-width: 800px;
+            margin: 40px auto 40px auto;
+            padding: 0 20px;
+        }
+        .page-title {
+            font-size: 36px;
+            font-weight: 500;
+            color: #202124;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        .page-subtitle {
+            font-size: 16px;
+            color: #5f6368;
+            line-height: 1.6;
+        }
+
+        /* CONTENEUR CENTRÉ POUR LA CARTE */
+        .formations-container {
+            max-width: 500px;
+            width: 100%;
+            padding: 0 20px 80px 20px;
+        }
+
+        /* CARTE FORMATION */
+        .formation-card {
+            background: #ffffff;
+            border: 1.5px solid #e0e2e6;
+            border-radius: 24px;
+            padding: 35px;
+            display: flex;
+            flex-direction: column;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.02);
+        }
+        .formation-card:hover {
+            border-color: #297be6;
+            box-shadow: 0 10px 30px rgba(41, 123, 230, 0.08);
+        }
+
+        /* BADGES */
+        .card-badges {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 20px;
+        }
+        .badge {
+            font-size: 11px;
+            font-weight: 700;
+            padding: 6px 14px;
+            border-radius: 20px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        .badge-distanciel {
+            border: 1px solid #11b199;
+            color: #11b199;
+            background-color: rgba(17, 177, 153, 0.05);
+        }
+        .badge-informatique {
+            border: 1px solid #297be6;
+            color: #297be6;
+            background-color: rgba(41, 123, 230, 0.05);
+        }
+        .badge-debutent {
+            border: 1px solid #f2994a;
+            color: #f2994a;
+            background-color: rgba(242, 153, 74, 0.05);
+        }
+
+        .formation-name {
+            font-size: 22px;
+            font-weight: 500;
+            color: #202124;
+            margin-bottom: 12px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        .formation-desc {
+            font-size: 14px;
+            color: #5f6368;
+            line-height: 1.6;
+            margin-bottom: 25px;
+        }
+
+        /* DETAILS SESSIONS */
+        .formation-details {
+            border-top: 1.5px dashed #e0e2e6;
+            padding-top: 20px;
+            margin-bottom: 30px;
+        }
+        .detail-item {
+            display: flex;
+            align-items: center;
+            font-size: 13px;
+            color: #3c4043;
+            margin-bottom: 14px;
+            text-transform: uppercase;
+            font-weight: 500;
+        }
+        
+        /* APPLICATION DU DÉGRADÉ LUMY SUR LES ICÔNES */
+        .detail-icon {
+            font-size: 18px;
+            margin-right: 14px;
+            width: 24px;
+            text-align: center;
+            background: linear-gradient(135deg, #11b199 0%, #297be6 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            display: inline-block;
+        }
+        
+        .detail-item span {
+            color: #70757a;
+            margin-right: 6px;
+        }
+        .detail-price {
+            color: #11b199;
+            font-weight: 700;
+        }
+
+        /* BOUTON EN CONSTRUCTION */
+        .btn-construction {
+            display: block;
+            width: 100%;
+            padding: 16px;
+            background: #f1f3f4;
+            color: #5f6368;
+            border: 1.5px dashed #c3c6ca;
+            border-radius: 26px;
+            font-size: 12px;
+            font-weight: 700;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            user-select: none;
+        }
+    </style>
+</head>
+<body>
+
+<!-- BARRE DE NAVIGATION -->
+<div class="navbar">
+    <div class="nav-logo">LUMY <span>FOR TRAINING</span></div>
+</div>
+
+<!-- EN-TÊTE -->
+<div class="page-header">
+    <h1 class="page-title">CENTRE DE FORMATION LUMY</h1>
+    <p class="page-subtitle">
+        Développez vos compétences et apprenez à maîtriser l'environnement numérique à votre rythme.
+    </p>
+</div>
+
+<!-- CONTENEUR DE LA FORMATION -->
+<div class="formations-container">
+
+    <div class="formation-card">
+        <div>
+            <div class="card-badges">
+                <div class="badge badge-distanciel">💻 DISTANCIEL</div>
+                <div class="badge badge-informatique">🖥️ INFORMATIQUE</div>
+                <div class="badge badge-debutent">🌱 DEBUTENT</div>
+            </div>
+            <h2 class="formation-name">Informatique pour Débutants</h2>
+            <p class="formation-desc">
+                Une formation pas à pas pour prendre en main un ordinateur, comprendre le fonctionnement du web, sécuriser vos données et naviguer en toute confiance.
+            </p>
+        </div>
+        
+        <div>
+            <div class="formation-details">
+                <!-- FORMAT : Ordinateur portable -->
+                <div class="detail-item">
+                    <i class="fa-solid fa-laptop detail-icon"></i>
+                    <span>Format :</span> En ligne / À distance
+                </div>
+                <!-- NIVEAU : Bébé -->
+                <div class="detail-item">
+                    <i class="fa-solid fa-baby detail-icon"></i>
+                    <span>Niveau :</span> Débutant complet
+                </div>
+                <!-- FORMATEUR : Profil formateur -->
+                <div class="detail-item">
+                    <i class="fa-solid fa-user-tie detail-icon"></i>
+                    <span>Formateur :</span> Fondateur Lumy
+                </div>
+                <!-- PRIX : Signe Dollar -->
+                <div class="detail-item">
+                    <i class="fa-solid fa-dollar-sign detail-icon"></i>
+                    <span>Prix :</span> <span class="detail-price">5€</span>
+                </div>
+            </div>
+            
+            <!-- BLOC EN CONSTRUCTION -->
+            <div class="btn-construction">
+                🚧 EN CONSTRUCTION — REVENEZ PROCHAINEMENT
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<!-- INTEGRATION DES SCRIPTS DU SITE (NAVBAR, FOOTER ET COOKIES) -->
+<script src="navbar.js"></script>
+<script src="cookies.js"></script>
+<script src="footer.js"></script>
+
+</body>
+</html>
