@@ -124,7 +124,6 @@
                 <div class="footer-bento-card footer-nav">
                     <h4>Protocole</h4>
                     <ul>
-                        <li><a href="contact.html">Contact</a></li>
                         <li><a href="mention legal.html">Protocoles Légaux</a></li>
                         <li><button class="btn-reset-cookies" id="resetSignalBtn">RESET SIGNAL</button></li>
                     </ul>
